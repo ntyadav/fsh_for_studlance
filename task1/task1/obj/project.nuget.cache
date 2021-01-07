@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/hLFNrRAXOLeIvhEEC1xro+BWWw3c0jph7Oi7ARQBrRMQY8+ThZvnuaGR6v1fSSCoujtx2eSevdvIWX15exBiA==",
+  "dgSpecHash": "HNq6gDQ7XutkpyAbQl/cmiMm0Cj/VIUSdkixUPE61s50F/YOMEp/LoBa6NOAwQeMYA9cp6q8Ad2aMwb5PeEZ8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nyada\\Desktop\\studlance_fsh1\\task1\\task1\\task1.fsproj",
+  "projectFilePath": "C:\\Users\\nyada\\source\\repos\\studlance\\studlance_fsh1\\task1\\task1\\task1.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\nyada\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512"
   ],

@@ -67,7 +67,7 @@ let main argv =
          let brush=new SolidBrush(Color.Red)
          drawGr.Graphics.FillEllipse(brush, float32 (oX + x), float32 (oY - y2), 3.0f, 3.0f) // «точка» графика,
     )
-    printfn "\nНажмите любую клавишу. Абсциссы точек пересчения графиков и будут корнями f"
+    printf "\nНажмите любую клавишу. Абсциссы точек пересчения графиков и будут корнями f\n"
     System.Console.ReadKey() |> ignore // ждём в консоли разрешения на построение,
     Application.Run(form) // открываем приложение Windows Forms из консольного приложения
 

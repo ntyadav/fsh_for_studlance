@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nyada\\Desktop\\studlance_fsh1\\task1\\task3\\task3.fsproj": {}
+    "C:\\Users\\nyada\\source\\repos\\studlance\\studlance_fsh1\\task1\\task3\\task3.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\nyada\\Desktop\\studlance_fsh1\\task1\\task3\\task3.fsproj": {
+    "C:\\Users\\nyada\\source\\repos\\studlance\\studlance_fsh1\\task1\\task3\\task3.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nyada\\Desktop\\studlance_fsh1\\task1\\task3\\task3.fsproj",
+        "projectUniqueName": "C:\\Users\\nyada\\source\\repos\\studlance\\studlance_fsh1\\task1\\task3\\task3.fsproj",
         "projectName": "task3",
-        "projectPath": "C:\\Users\\nyada\\Desktop\\studlance_fsh1\\task1\\task3\\task3.fsproj",
+        "projectPath": "C:\\Users\\nyada\\source\\repos\\studlance\\studlance_fsh1\\task1\\task3\\task3.fsproj",
         "packagesPath": "C:\\Users\\nyada\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nyada\\Desktop\\studlance_fsh1\\task1\\task3\\obj\\",
+        "outputPath": "C:\\Users\\nyada\\source\\repos\\studlance\\studlance_fsh1\\task1\\task3\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nyada\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\nyada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
