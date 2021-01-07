@@ -11,11 +11,13 @@ let t x =
     else g x
 
     
+let EPS = 0.000001 // Допустимая погрешность
+
 (* Т. к. не существует квадрата [A; B] x [A; B], входящего в D(h),
     то ф-ей tabFunc используется прямоугольник [A1; B1] x [A2; B2] (м. б. квадратом)*)
 let tabFunc f a1 b1 a2 b2 inc =
     let rec tabFunc' i j =
-         if (i <= b1 && j <= b2) then
+         if (i <= b1 + EPS && j <= b2 + EPS) then
             printf "h(%.2f, %.2f) = %.3f\n" i j (f i j)
             tabFunc' i (j + inc)
          else if (i <= b1 && j > b2) then
@@ -23,9 +25,11 @@ let tabFunc f a1 b1 a2 b2 inc =
     tabFunc' a1 a2
             
 
-let findMax f l r inc = 
+
+let findMax f l r = 
+    let inc = (r - l) / 49.
     let rec findMax' i max = 
-        if i > r then max
+        if i > r + EPS then max
         else 
             let cur = f i
             if cur > max then findMax' (i + inc) cur
@@ -51,6 +55,5 @@ let main argv =
     printf "\n"
     let c = enterFloat "C"
     let d = enterFloat "D"
-    let inc2 = (d - c) / 50.
-    printf "Максимальное значение функции t(x) на отрезке [%.2f; %.2f] = %.3f" c d (findMax t c d inc2)
+    printf "Максимальное значение функции t(x) на отрезке [%.2f; %.2f] = %.3f" c d (findMax t c d)
     0 // return an integer exit code
