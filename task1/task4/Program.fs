@@ -47,4 +47,5 @@ let main argv =
     tabFunc p a b inc
     printf "\nПусть f(x) = q(x). Тогда:\n"
     tabFunc q a b inc
+    System.Console.ReadKey() |> ignore
     0 // return an integer exit code

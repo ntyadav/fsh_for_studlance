@@ -23,4 +23,5 @@ let main argv =
     let b = enterFloat "B"
     let h = enterFloat "шаг h"
     tabFunc f a b h
+    System.Console.ReadKey() |> ignore
     0 // return an integer exit code

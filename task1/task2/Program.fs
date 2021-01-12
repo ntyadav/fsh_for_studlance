@@ -56,4 +56,5 @@ let main argv =
     let c = enterFloat "C"
     let d = enterFloat "D"
     printf "Максимальное значение функции t(x) на отрезке [%.2f; %.2f] = %.3f" c d (findMax t c d)
+    System.Console.ReadKey() |> ignore
     0 // return an integer exit code

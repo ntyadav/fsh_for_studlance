@@ -7,13 +7,13 @@ let a i =
      | _ -> tanh i / sin i
 
 let funcSum l r f =
-    let rec funcSum' i acc= 
+    let rec funcSum' i acc =
         if i > r then acc
         else funcSum' (i + 1.) (acc + f i)
     funcSum' l 0.
 
 let aSum m = 
-    let a i = 
+    let a i =
         match i with
          | 2. | 5. | 7. -> sqrt i + i ** (1. / 5.) + i ** (1. / 7.)
          | _ -> tanh i / sin i

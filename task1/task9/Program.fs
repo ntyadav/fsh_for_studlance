@@ -45,5 +45,5 @@ let main argv =
     printArray (Array.map2 (fun x y -> x * y) b c)
     printf "\nОтсортированные в порядке неубывания массив B:\n"
     printArray (Array.sort b)
-
+    System.Console.ReadKey() |> ignore
     0 // return an integer exit code

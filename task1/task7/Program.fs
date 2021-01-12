@@ -16,5 +16,6 @@ let seriesSum n =
 [<EntryPoint>]
 let main argv =
     printf "sh10 = %f\n" (sinh 10.)
-    printf "Частичная сумма от 0 до 100: %A\n" (seriesSum 50)
+    printf "Частичная сумма от 0 до 50: %A\n" (seriesSum 50)
+    System.Console.ReadKey() |> ignore
     0

@@ -12,10 +12,8 @@ let f'' x = 12. * x - 2. // 2-я производная f
 
 let EPS1 = 1. / 1E3
 let EPS2 = 1. / 1E10
-(*
-let a = 3f
-a - f a / f' a
-*)
+
+
 let rec findRoot f f' f'' a b eps =
     if abs (a - b) <= 2. * eps then 
         (a + b) / 2.
@@ -58,9 +56,9 @@ let main argv =
      let oY = fH / 2.0 // середина высоты окна формы,
      drawGr.Graphics.DrawLine(pen, 0.0f, float32 oY, float32 fW, float32 oY) // рисуем ось OX,
      drawGr.Graphics.DrawLine(pen, float32 oX, 0.0f, float32 oX, float32 fH) // рисуем ось OY,
-     for t in -8.0..0.03..8.0 do // строим график функции по точкам,
-         let x = t * 20. // Растягиваем масштаб по оси OX
-         let y1 = f1 t / 2.
+     for t in -6.0..0.01..6.0 do // строим график функции по точкам,
+         let x = t * 30. // Растягиваем масштаб по оси OX
+         let y1 = f1 t
          let brush=new SolidBrush(Color.Blue)
          drawGr.Graphics.FillEllipse(brush, float32 (oX + x), float32 (oY - y1), 3.0f, 3.0f) // «точка» графика,
          let y2 = f2 t
@@ -70,7 +68,5 @@ let main argv =
     printf "\nНажмите любую клавишу. Абсциссы точек пересчения графиков и будут корнями f\n"
     System.Console.ReadKey() |> ignore // ждём в консоли разрешения на построение,
     Application.Run(form) // открываем приложение Windows Forms из консольного приложения
-
-    
-
+    System.Console.ReadKey() |> ignore
     0 // return an integer exit code

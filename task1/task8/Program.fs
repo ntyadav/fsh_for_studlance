@@ -10,4 +10,5 @@ let main argv =
     printf "Максимальный элемент: %d\n\n" maxEl
     let l1 = List.map (fun elem -> if elem = x then y else elem) l
     printf "Замена всех %d на %d:\n%A\n" x y l1
+    System.Console.ReadKey() |> ignore
     0 // return an integer exit code

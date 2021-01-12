@@ -27,5 +27,5 @@ let main argv =
 
     let rel = genBinRelation a b
     printf "Случайное бин. отношение между A и B: %A" (List.ofSeq rel)
-
+    System.Console.ReadKey() |> ignore
     0 // return an integer exit code
