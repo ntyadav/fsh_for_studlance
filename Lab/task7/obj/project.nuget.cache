@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zwCUx3oHzDzH8Vs53pKxiidRwQee1ZHZZ11NP6Nw0nxuRht2CAIRFjB8AIYEdFhTjMBqXOJZrL/w+Jy+ZSfQ1Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nyada\\Desktop\\studlance_fsh1\\Lab\\task7\\task7.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nyada\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
